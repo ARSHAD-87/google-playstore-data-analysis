@@ -13,10 +13,9 @@ The dashboard is built entirely in Python, using **Plotly** for interactive visu
 ### Screenshots
 
 **Desktop View:**
-![Desktop Dashboard View](screenshots/dashboard_desktop.png)
-
-**Mobile View:**
-![Mobile Dashboard View](screenshots/dashboard_mobile.png)
+![Screenshot 1](Screenshots/Screenshot_1.png)
+![Screenshot 2](Screenshots/Screenshot_2.png)
+![Screenshot 3](Screenshots/Screenshot_3.png)
 
 ---
 
@@ -78,7 +77,7 @@ This project was extended with 6 advanced analytic visuals to meet internship re
 
 1.  Clone the repository:
     ```sh
-    git clone [https://github.com/YourUsername/playstore-analytics-dashboard.git](https://github.com/YourUsername/playstore-analytics-dashboard.git)
+    git clone [https://github.com/ARSHAD-87/google-playstore-data-analysis.git](https://github.com/ARSHAD-87/google-playstore-data-analysis.git)
     ```
 2.  Navigate to the project directory:
     ```sh
@@ -90,6 +89,6 @@ This project was extended with 6 advanced analytic visuals to meet internship re
     ```
 4.  Run the Python script:
     ```sh
-    python google_play_analysis.py
+    python Google_Play_Store_Analysis-Dashboard.py
     ```
 5.  This will automatically generate and open the `index.html` file in your default web browser.
