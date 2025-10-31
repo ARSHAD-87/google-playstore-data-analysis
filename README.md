@@ -77,7 +77,7 @@ This project was extended with 6 advanced analytic visuals to meet internship re
 
 1.  Clone the repository:
     ```sh
-    git clone [https://github.com/ARSHAD-87/google-playstore-data-analysis.git](https://github.com/ARSHAD-87/google-playstore-data-analysis.git)
+    git clone https://github.com/ARSHAD-87/google-playstore-data-analysis.git
     ```
 2.  Navigate to the project directory:
     ```sh
