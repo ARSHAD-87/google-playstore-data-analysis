@@ -1,8 +1,6 @@
 # Google Play Store Analysis Dashboard
 
-**Live Project Link:** [**https://YourUsername.github.io/playstore-analytics-dashboard/**](https://YourUsername.github.io/playstore-analytics-dashboard/)
-
-*(Note: You will get this link after completing Step 5)*
+**Live Project Link:** [**https://arshad-87.github.io/google-playstore-data-analysis/**](https://arshad-87.github.io/google-playstore-data-analysis/)
 
 ---
 
