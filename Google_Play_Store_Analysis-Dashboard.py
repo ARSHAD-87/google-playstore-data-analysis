@@ -182,7 +182,7 @@ fig1.update_layout(
     margin=dict(l=10, r=10, t=30, b=10)
 )
 
-save_plot_as_html(fig1,"0","23","Category Graph 1.html","The top categories on the Play Store are dominated by tools, entertainment, and productivity apps")
+save_plot_as_html(fig1,"0","24","Category Graph 1.html","The top categories on the Play Store are dominated by tools, entertainment, and productivity apps")
 
 # Figure 2
 type_counts=apps_df['Type'].value_counts()
@@ -201,7 +201,7 @@ fig2.update_layout(
     title_font=title_font,
     margin=dict(l=10, r=10, t=30, b=10)
 )
-save_plot_as_html(fig2,"0","23","Type Graph 2.html","Most apps on the Playstore are free, indicating a strategy to attract users first and monetize through ads or inapp purchases.")
+save_plot_as_html(fig2,"0","24","Type Graph 2.html","Most apps on the Playstore are free, indicating a strategy to attract users first and monetize through ads or inapp purchases.")
 
 # Figure 3
 fig3=px.histogram(
@@ -222,7 +222,7 @@ fig3.update_layout(
     yaxis=dict(title_font=axis_font),
     margin=dict(l=10, r=10, t=30, b=10)
 )
-save_plot_as_html(fig3,"0","23","Rating Graph 3.html","Ratings are skewed towards higher values, sugessting that most apps are favorable by users ")
+save_plot_as_html(fig3,"0","24","Rating Graph 3.html","Ratings are skewed towards higher values, sugessting that most apps are favorable by users ")
 
 # Figure 4
 sentiment_counts=reviews_df['Sentiment_Score'].value_counts()
@@ -245,7 +245,7 @@ fig4.update_layout(
     yaxis=dict(title_font=axis_font),
     margin=dict(l=10, r=10, t=30, b=10)
 )
-save_plot_as_html(fig4,"0","23","Sentiment Graph 4.html","Sentiments in reviews show a mix of positive and negative feedback, with a slight lean towards positive sentiments")
+save_plot_as_html(fig4,"0","24","Sentiment Graph 4.html","Sentiments in reviews show a mix of positive and negative feedback, with a slight lean towards positive sentiments")
 
 # Figure 5
 install_by_category=apps_df.groupby('Category')['Installs'].sum().nlargest(10)
@@ -269,7 +269,7 @@ fig5.update_layout(
     yaxis=dict(title_font=axis_font),
     margin=dict(l=10, r=10, t=30, b=10)
 )
-save_plot_as_html(fig5,"0","23","Installs Graph 5.html","The categoris with the most installs are social and communication apps, reflecting their broad appeal and daily usage")
+save_plot_as_html(fig5,"0","24","Installs Graph 5.html","The categoris with the most installs are social and communication apps, reflecting their broad appeal and daily usage")
 
 # Figure 6
 updates_per_year=apps_df['Last Updated'].dt.year.value_counts().sort_index()
@@ -291,7 +291,7 @@ fig6.update_layout(
     yaxis=dict(title_font=axis_font),
     margin=dict(l=10, r=10, t=30, b=10)
 )
-save_plot_as_html(fig6,"0","23","Updates Graph 6.html", "Updades have been increasing over the years, indicating that developers are actively maintaining and improving their apps.")
+save_plot_as_html(fig6,"0","24","Updates Graph 6.html", "Updades have been increasing over the years, indicating that developers are actively maintaining and improving their apps.")
 
 # Figure 7
 revenue_by_category=apps_df.groupby('Category')['Revenue'].sum().nlargest(10)
@@ -314,7 +314,7 @@ fig7.update_layout(
     yaxis=dict(title_font=axis_font),
     margin=dict(l=10, r=10, t=30, b=10)
 )
-save_plot_as_html(fig7,"0","23","Revenue Graph 7.html","Categories such as Family and Lifestyle lead in revenue generation, indicating their monetization potential.")
+save_plot_as_html(fig7,"0","24","Revenue Graph 7.html","Categories such as Family and Lifestyle lead in revenue generation, indicating their monetization potential.")
 
 # Figure 8
 genre_counts=apps_df['Genres'].str.split(';',expand=True).stack().value_counts().nlargest(10)
@@ -337,7 +337,7 @@ fig8.update_layout(
     yaxis=dict(title_font=axis_font),
     margin=dict(l=10, r=10, t=30, b=10)
 )
-save_plot_as_html(fig8,"0","23","Genre Graph 8.html","Action and Entertainment genres are the most common, reflecting users' prefrence for engaging and easy-to-play games.")
+save_plot_as_html(fig8,"0","24","Genre Graph 8.html","Action and Entertainment genres are the most common, reflecting users' prefrence for engaging and easy-to-play games.")
 
 # Figure 9
 fig9=px.scatter(
@@ -359,7 +359,7 @@ fig9.update_layout(
     yaxis=dict(title_font=axis_font),
     margin=dict(l=10, r=10, t=30, b=10)
 )
-save_plot_as_html(fig9,"0","23","Update X Rating Graph 9.html","The Scatter plot shows a weak correlation between the last update and ratings, suggesting that more frequent updates don't always result in better ratings.")
+save_plot_as_html(fig9,"0","24","Update X Rating Graph 9.html","The Scatter plot shows a weak correlation between the last update and ratings, suggesting that more frequent updates don't always result in better ratings.")
 
 # Figure 10
 fig10=px.box(
@@ -381,7 +381,7 @@ fig10.update_layout(
     yaxis=dict(title_font=axis_font),
     margin=dict(l=10, r=10, t=30, b=10)
 )
-save_plot_as_html(fig10,"0","23","Paid Free Graph 10.html","Paid apps generally have higher ratings compared to free apps,suggesting that users expect higher quality from apps they pay for.")
+save_plot_as_html(fig10,"0","24","Paid Free Graph 10.html","Paid apps generally have higher ratings compared to free apps,suggesting that users expect higher quality from apps they pay for.")
 
 # Figure 11 
 filter1_df=apps_df[
